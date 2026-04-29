@@ -1,9 +1,5 @@
 # 🤖 ARIA — Autonomous Realtime Intelligence Assistant
 
-> 5 AI agents built to manage my life as a full-stack dev, content creator & master's student.
-
-Built by **Remona Denny** | Built in public 🔨
-
 ---
 
 ## 🤖 The 5 Agents
@@ -32,13 +28,13 @@ Built by **Remona Denny** | Built in public 🔨
 
 | Phase | What | Status |
 |-------|------|--------|
-| Phase 0 | Setup & Research | 🔄 In Progress |
-| Phase 1 | Agent 1 — Life Admin | 🔴 Not Started |
-| Phase 2 | Agent 2 — Wellness | 🔴 Not Started |
-| Phase 3 | Agent 3 — Finance | 🔴 Not Started |
-| Phase 4 | Agent 4 — Content | 🔴 Not Started |
-| Phase 5 | Agent 5 — Relationships | 🔴 Not Started |
-| Phase 6 | Polish & Launch | 🔴 Not Started |
+| Phase 0 | Setup & Research |
+| Phase 1 | Agent 1 — Life Admin |
+| Phase 2 | Agent 2 — Wellness |
+| Phase 3 | Agent 3 — Finance |
+| Phase 4 | Agent 4 — Content |
+| Phase 5 | Agent 5 — Relationships |
+| Phase 6 | Polish & Launch |
 
 ---
 
@@ -50,4 +46,3 @@ Built by **Remona Denny** | Built in public 🔨
 
 ---
 
-*Following along? Give it a ⭐*
