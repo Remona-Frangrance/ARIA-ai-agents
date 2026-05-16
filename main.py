@@ -21,9 +21,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
-def read_root():
-    return {"status": "online", "agent": "ARIA Core"}
 
 @app.get("/api/tip")
 def get_productivity_tip():
