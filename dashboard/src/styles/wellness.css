@@ -1,0 +1,189 @@
+:root {
+  --well-bg: #0f172a;
+  --well-accent: #2dd4bf;
+  --well-sleep: #818cf8;
+  --well-mood: #f472b6;
+  --well-hydro: #38bdf8;
+  --well-card: rgba(30, 41, 59, 0.7);
+  --well-border: rgba(148, 163, 184, 0.1);
+}
+
+.wellness-page {
+  animation: fadeIn 0.5s ease;
+  color: #f1f5f9;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.wellness-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.well-card {
+  background: var(--well-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--well-border);
+  border-radius: 24px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.well-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(45, 212, 191, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.well-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.well-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.well-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Tracking Components */
+.tracker-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.tracker-value {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.tracker-unit {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-left: 4px;
+}
+
+/* Progress Rings */
+.progress-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.progress-ring-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.05);
+  stroke-width: 8;
+}
+
+.progress-ring-fill {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.progress-pct {
+  font-size: 24px;
+  font-weight: 800;
+  display: block;
+}
+
+/* Daily Check-in */
+.checkin-section {
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.1) 0%, rgba(129, 140, 248, 0.1) 100%);
+  border: 1px solid rgba(45, 212, 191, 0.2);
+}
+
+.well-input {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--well-border);
+  border-radius: 16px;
+  padding: 16px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 12px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.well-input:focus {
+  border-color: var(--well-accent);
+}
+
+.well-btn {
+  background: var(--well-accent);
+  color: #0f172a;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+}
+
+.well-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+}
+
+/* Mood Chart */
+.chart-container {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+/* Activity List */
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .wellness-grid {
+    grid-template-columns: 1fr;
+  }
+}

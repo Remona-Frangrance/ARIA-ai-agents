@@ -1,0 +1,166 @@
+:root {
+  --rel-bg: #0f172a;
+  --rel-accent: #f472b6;
+  --rel-inner: #fb7185;
+  --rel-close: #fb923c;
+  --rel-network: #94a3b8;
+  --rel-card: rgba(30, 41, 59, 0.7);
+  --rel-border: rgba(244, 114, 182, 0.1);
+}
+
+.relationships-page {
+  animation: fadeIn 0.5s ease;
+  color: #f1f5f9;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.rel-card {
+  background: var(--rel-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--rel-border);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+/* Relationship Circles */
+.rel-circles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rel-circle-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.rel-circle-item:hover {
+  background: rgba(244, 114, 182, 0.05);
+  border-color: rgba(244, 114, 182, 0.2);
+}
+
+.rel-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--rel-accent), var(--rel-inner));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.rel-info {
+  flex: 1;
+}
+
+.rel-name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.rel-status {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Milestone List */
+.milestone-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-bottom: 1px solid var(--rel-border);
+}
+
+.milestone-date {
+  width: 60px;
+  text-align: center;
+}
+
+.milestone-day {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--rel-accent);
+}
+
+.milestone-month {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+/* Interaction Tracker */
+.interaction-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.interaction-fill {
+  height: 100%;
+  background: var(--rel-accent);
+  border-radius: 3px;
+}
+
+/* Category Badges */
+.rel-tag {
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tag-inner { background: rgba(251, 113, 133, 0.1); color: #fb7185; }
+.tag-close { background: rgba(251, 146, 60, 0.1); color: #fb923c; }
+.tag-network { background: rgba(148, 163, 184, 0.1); color: #94a3b8; }
+
+/* Add Person Form */
+.rel-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.rel-input {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--rel-border);
+  border-radius: 12px;
+  padding: 12px;
+  color: #fff;
+  outline: none;
+}
+
+.rel-input:focus {
+  border-color: var(--rel-accent);
+}
+
+.rel-btn {
+  background: var(--rel-accent);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  grid-column: span 2;
+}

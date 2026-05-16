@@ -1,0 +1,322 @@
+text,label
+zomato food delivery biryani,Food
+swiggy order chicken wings,Food
+dominos pizza order online,Food
+ordered lunch from swiggy,Food
+food panda dinner delivery,Food
+uber eats breakfast order,Food
+restaurant dinner with friends,Food
+cafe coffee day cappuccino,Food
+starbucks latte grande,Food
+street food pani puri,Food
+chai and samosa at tapri,Food
+lunch at office canteen,Food
+dinner at hotel,Food
+ice cream at baskin robbins,Food
+mcdonalds burger meal,Food
+kfc chicken bucket order,Food
+pizza hut family dinner,Food
+biryani from paradise,Food
+dosa at udupi restaurant,Food
+thali at punjabi dhaba,Food
+midnight snacks delivery,Food
+breakfast at idli shop,Food
+barbeque nation dinner party,Food
+haldirams namkeen order,Food
+tea at chaayos,Food
+fruit juice at juice shop,Food
+bakery cake for birthday,Food
+Chinese food at mainland china,Food
+sushi at japanese restaurant,Food
+burger king whopper meal,Food
+monthly house rent payment,Rent
+room rent for june,Rent
+pg accommodation rent,Rent
+flat rent transfer to landlord,Rent
+hostel fees monthly,Rent
+apartment rent deposit,Rent
+rent payment via neft,Rent
+house rent allowance adjustment,Rent
+rent paid to owner upi,Rent
+monthly accommodation charges,Rent
+uber ride to office,Transport
+ola cab to airport,Transport
+auto rickshaw fare,Transport
+metro card recharge,Transport
+rapido bike taxi,Transport
+bus pass monthly renewal,Transport
+petrol filled at pump,Transport
+parking charges mall,Transport
+toll charges highway,Transport
+train ticket booking,Transport
+cab to railway station,Transport
+uber ride koramangala to whitefield,Transport
+ola auto hsr layout,Transport
+bike servicing charges,Transport
+delhi metro smart card,Transport
+namma metro bangalore recharge,Transport
+mumbai local train pass,Transport
+rapido auto to market,Transport
+car wash and cleaning,Transport
+airport shuttle fare,Transport
+netflix subscription renewal,Subscriptions
+spotify premium monthly,Subscriptions
+amazon prime membership,Subscriptions
+youtube premium subscription,Subscriptions
+hotstar vip annual plan,Subscriptions
+linkedin premium monthly,Subscriptions
+apple music subscription,Subscriptions
+zee5 premium monthly,Subscriptions
+sony liv subscription,Subscriptions
+jio cinema premium plan,Subscriptions
+audible monthly subscription,Subscriptions
+notion premium plan,Subscriptions
+figma professional plan,Subscriptions
+github copilot subscription,Subscriptions
+adobe creative cloud monthly,Subscriptions
+microsoft 365 annual,Subscriptions
+icloud storage 200gb,Subscriptions
+google one 100gb plan,Subscriptions
+chatgpt plus subscription,Subscriptions
+grammarly premium annual,Subscriptions
+electricity bill payment bescom,Utilities
+water bill payment,Utilities
+gas cylinder booking,Utilities
+airtel broadband bill,Utilities
+jio fiber monthly,Utilities
+act fibernet payment,Utilities
+mobile recharge prepaid,Utilities
+postpaid bill payment,Utilities
+dth recharge tata sky,Utilities
+piped gas bill payment,Utilities
+municipal water charges,Utilities
+sewerage charges paid,Utilities
+internet bill jio,Utilities
+wifi router charges,Utilities
+airtel prepaid recharge,Utilities
+bigbasket weekly groceries,Groceries
+blinkit instant delivery groceries,Groceries
+zepto quick commerce order,Groceries
+dmart monthly shopping,Groceries
+reliance fresh vegetables,Groceries
+nature basket organic order,Groceries
+more supermarket groceries,Groceries
+spencer daily essentials,Groceries
+vegetables from sabzi mandi,Groceries
+fruits and dry fruits order,Groceries
+milk subscription monthly,Groceries
+eggs and bread weekly,Groceries
+rice and dal from kirana,Groceries
+cooking oil mustard groundnut,Groceries
+masala and spices order,Groceries
+amazon headphones purchase,Shopping
+flipkart mobile phone order,Shopping
+myntra clothes shopping,Shopping
+ajio fashion sale order,Shopping
+shoes from nike website,Shopping
+electronics from croma,Shopping
+reliance digital laptop,Shopping
+furniture from ikea,Shopping
+home decor from pepperfry,Shopping
+kitchen appliances amazon,Shopping
+watch from titan,Shopping
+sunglasses from lenskart,Shopping
+cosmetics from nykaa,Shopping
+meesho fashion haul,Shopping
+decathlon sports equipment,Shopping
+books from amazon kindle,Shopping
+stationery supplies order,Shopping
+gadgets from vijay sales,Shopping
+bag from wildcraft,Shopping
+curtains and bedsheet set,Shopping
+movie tickets pvr cinemas,Entertainment
+inox movie night booking,Entertainment
+concert tickets live show,Entertainment
+bowling alley weekend,Entertainment
+pub night with friends,Entertainment
+club entry and drinks,Entertainment
+amusement park tickets,Entertainment
+escape room adventure,Entertainment
+comedy show tickets,Entertainment
+gaming zone charges,Entertainment
+paintball weekend fun,Entertainment
+board game cafe visit,Entertainment
+karaoke night out,Entertainment
+stand up comedy live,Entertainment
+cricket match tickets ipl,Entertainment
+theme park entry fee,Entertainment
+water park day trip,Entertainment
+museum exhibition tickets,Entertainment
+book my show events,Entertainment
+go karting weekend activity,Entertainment
+gym membership monthly gold gym,Health
+pharmacy medicines purchase,Health
+doctor consultation fee,Health
+dentist checkup payment,Health
+eye checkup and glasses,Health
+blood test diagnostic lab,Health
+physiotherapy session,Health
+yoga class monthly fee,Health
+meditation app subscription,Health
+vitamin supplements order,Health
+ayurvedic medicine purchase,Health
+health insurance premium,Health
+lab test full body checkup,Health
+dermatologist skin consultation,Health
+mental health therapy session,Health
+protein powder supplement,Health
+first aid kit supplies,Health
+hospital emergency visit,Health
+home loan emi payment hdfc,EMI
+car loan emi monthly,EMI
+bike emi bajaj finance,EMI
+personal loan emi repayment,EMI
+credit card emi conversion,EMI
+education loan emi,EMI
+consumer durable emi,EMI
+laptop emi payment,EMI
+phone emi monthly installment,EMI
+bajaj finserv emi payment,EMI
+gold loan emi repayment,EMI
+sbi home loan monthly,EMI
+icici car loan payment,EMI
+hdfc personal loan emi,EMI
+axis bank credit card emi,EMI
+sip mutual fund monthly,Investments
+stock purchase zerodha,Investments
+crypto bitcoin purchase,Investments
+ppf contribution yearly,Investments
+fixed deposit bank,Investments
+recurring deposit monthly,Investments
+gold bond purchase,Investments
+nps contribution monthly,Investments
+elss tax saving fund,Investments
+debt mutual fund purchase,Investments
+equity shares purchase,Investments
+sovereign gold bond,Investments
+post office saving scheme,Investments
+groww mutual fund sip,Investments
+kuvera investment monthly,Investments
+udemy course purchase,Education
+coursera certification fee,Education
+college tuition fees,Education
+coaching class fees,Education
+competitive exam preparation,Education
+ielts exam registration,Education
+books and study material,Education
+online workshop registration,Education
+linkedin learning subscription,Education
+coding bootcamp fees,Education
+certification exam fee,Education
+library membership annual,Education
+school fees payment,Education
+tuition teacher monthly,Education
+skill share premium course,Education
+haircut at salon,Personal
+spa and massage treatment,Personal
+laundry dry cleaning,Personal
+gift for friend birthday,Personal
+donation to charity,Personal
+wedding gift contribution,Personal
+tailor stitching charges,Personal
+shoe repair cobbler,Personal
+key duplicate making,Personal
+courier and shipping,Personal
+photocopy and printing,Personal
+passport renewal fees,Personal
+driving license renewal,Personal
+id card lamination,Personal
+temple donation offering,Personal
+phone screen protector,Personal
+mobile cover purchase,Personal
+umbrella purchase monsoon,Personal
+newspaper subscription monthly,Personal
+monthly salary credited,Salary
+salary transfer from company,Salary
+bonus payment received,Salary
+incentive payout monthly,Salary
+variable pay credited,Salary
+arrears payment received,Salary
+freelance project payment,Freelance
+upwork earnings withdrawal,Freelance
+fiverr gig payment,Freelance
+consulting fees received,Freelance
+side project income,Freelance
+content writing payment,Freelance
+graphic design freelance,Freelance
+web development project,Freelance
+tutoring income received,Freelance
+rent from tenant received,Other
+cashback reward credited,Other
+refund from amazon,Other
+interest earned bank,Other
+dividend income stocks,Other
+lottery prize won,Other
+insurance claim settlement,Other
+gift money received,Other
+sold old phone olx,Other
+cash deposit atm,Other
+insurance premium payment,Other
+life insurance lic premium,Other
+car insurance renewal,Other
+travel insurance policy,Other
+society maintenance charges,Rent
+apartment maintenance monthly,Rent
+security deposit flat,Rent
+brokerage charges house,Rent
+registered rent agreement,Rent
+snacks at office cafeteria,Food
+cold drink and chips,Food
+mineral water bottle,Food
+protein bar purchase,Food
+energy drink redbull,Food
+mixed vegetables weekly,Groceries
+paneer and tofu order,Groceries
+frozen foods and snacks,Groceries
+cleaning supplies detergent,Groceries
+tissue paper and toiletries,Groceries
+toll plaza fastag recharge,Transport
+fuel diesel for car,Transport
+auto repair mechanics,Transport
+tyre replacement vehicle,Transport
+battery replacement bike,Transport
+clothes ironing dhobi,Personal
+cobbler shoe repair,Personal
+pest control home service,Personal
+home cleaning service,Personal
+plumber repair charges,Personal
+electricity meter reading payment,Utilities
+lpg gas connection renewal,Utilities
+inverter battery replacement,Utilities
+ro water purifier service,Utilities
+ac service maintenance,Utilities
+phone repair screen fix,Shopping
+laptop bag purchase,Shopping
+desk organizer amazon,Shopping
+water bottle purchase,Shopping
+earphones replacement,Shopping
+streaming service mubi,Entertainment
+magazine subscription digital,Entertainment
+newspaper digital edition,Entertainment
+podcast premium membership,Entertainment
+ott platform discovery plus,Entertainment
+ambulance charges emergency,Health
+covid test rt pcr,Health
+vaccination fee booster dose,Health
+weight scale purchase,Health
+resistance bands exercise,Health
+flat purchase stamp duty,EMI
+plot emi monthly,EMI
+commercial property emi,EMI
+renovated loan payment,EMI
+loan interest payment,EMI
+paytm money fund transfer,Investments
+angel one stock trade,Investments
+coin by zerodha sip,Investments
+et money investment,Investments
+smallcase portfolio purchase,Investments
+workshop fee offline class,Education
+conference registration fee,Education
+journal subscription academic,Education
+thesis printing binding,Education
+research paper access fee,Education
