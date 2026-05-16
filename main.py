@@ -22,11 +22,11 @@ app.add_middleware(
 )
 
 @app.get("/")
-def root():
-    return {"message": "ARIA is alive"}
+def read_root():
+    return {"status": "online", "agent": "ARIA Core"}
 
-@app.get("/test-ai")
-def test_ai():
+@app.get("/api/tip")
+def get_productivity_tip():
     response = ask_llm("Give me one productivity tip in one sentence.")
     return {"tip": response}
 
@@ -100,9 +100,9 @@ def get_transactions(
     )
 
 
-@app.delete("/finance/transaction/{tx_id}")
+@app.delete("/api/finance/transaction/{tx_id}")
 def delete_transaction(tx_id: int):
-    return handle_finance("delete_transaction", id=tx_id)
+    return handle_finance("delete_transaction", tx_id=tx_id)
 
 
 # ─── Summary & Analytics ──────────────────────────────────
@@ -112,8 +112,8 @@ def get_finance_summary(month: Optional[str] = None):
     return handle_finance("get_summary", month=month)
 
 
-@app.get("/finance/analytics")
-def get_analytics():
+@app.get("/api/finance/analytics")
+def get_finance_analytics():
     return handle_finance("get_analytics")
 
 
@@ -127,15 +127,8 @@ def get_finance_daily(days: int = 30):
     return handle_finance("get_daily_spending", days=days)
 
 
-@app.get("/finance/monthly-trend")
-def get_monthly_trend(months: int = 6):
-    return handle_finance("get_monthly_trend", months=months)
-
-
-# ─── Budgets ──────────────────────────────────────────────
-
-@app.post("/finance/budget")
-def set_budget(data: dict = Body(...)):
+@app.post("/api/finance/budget")
+def set_finance_budget(data: dict = Body(...)):
     return handle_finance("set_budget", **data)
 
 
@@ -144,10 +137,8 @@ def get_finance_budgets(month: Optional[str] = None):
     return handle_finance("get_budgets", month=month)
 
 
-# ─── Savings Goals ────────────────────────────────────────
-
-@app.post("/finance/goal")
-def create_goal(data: dict = Body(...)):
+@app.post("/api/finance/goal")
+def create_finance_goal(data: dict = Body(...)):
     return handle_finance("create_goal", **data)
 
 
@@ -156,63 +147,61 @@ def get_finance_goals():
     return handle_finance("get_goals")
 
 
-@app.put("/finance/goal/{goal_id}")
-def update_goal(goal_id: int, data: dict = Body(...)):
-    return handle_finance("update_goal", id=goal_id, **data)
+@app.get("/api/finance/subscriptions")
+def get_finance_subs(active_only: bool = True):
+    return handle_finance("get_subscriptions", active_only=active_only)
 
 
-@app.delete("/finance/goal/{goal_id}")
-def delete_goal(goal_id: int):
-    return handle_finance("delete_goal", id=goal_id)
-
-
-# ─── Subscriptions ────────────────────────────────────────
-
-@app.post("/finance/subscription")
-def add_subscription(data: dict = Body(...)):
-    return handle_finance("add_subscription", **data)
-
-
-@app.get("/finance/subscriptions")
-def get_subscriptions():
-    return handle_finance("get_subscriptions")
-
-
-@app.delete("/finance/subscription/{sub_id}")
-def delete_subscription(sub_id: int):
-    return handle_finance("delete_subscription", id=sub_id)
-
-
-# ─── Profile ─────────────────────────────────────────────
-
-@app.post("/finance/profile")
-def set_profile(data: dict = Body(...)):
-    return handle_finance("set_profile", **data)
-
-
-@app.get("/finance/profile")
-def get_profile():
+@app.get("/api/finance/profile")
+def get_finance_profile():
     return handle_finance("get_profile")
+
+
+@app.post("/api/finance/profile")
+def update_finance_profile(data: dict = Body(...)):
+    return handle_finance("set_profile", **data)
 
 
 # ─── AI Features ──────────────────────────────────────────
 
-@app.post("/finance/reset")
+@app.post("/api/finance/reset")
 def finance_reset():
     """Reset all finance data."""
     return handle_finance("reset_data")
 
 
-@app.get("/finance/forecast")
+@app.get("/api/finance/forecast")
 def get_forecast():
     return handle_finance("get_forecast")
 
 
-@app.get("/finance/insights")
+@app.get("/api/finance/insights")
 def get_insights():
     return handle_finance("get_insights")
 
 
-@app.get("/finance/ask")
+@app.get("/api/finance/ask")
 def ask_finance(question: str = Query(...)):
     return handle_finance("ask", question=question)
+
+
+# ─── Static Files & Frontend (Production) ──────────────────
+
+# Ensure static directory exists before mounting
+if os.path.exists("static"):
+    app.mount("/static", StaticFiles(directory="static"), name="static")
+
+    @app.get("/{full_path:path}")
+    async def serve_frontend(full_path: str):
+        # Allow API routes to pass through
+        if full_path.startswith("api/"):
+            return None
+        
+        file_path = os.path.join("static", full_path)
+        if os.path.exists(file_path) and os.path.isfile(file_path):
+            return FileResponse(file_path)
+        return FileResponse(os.path.join("static", "index.html"))
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
